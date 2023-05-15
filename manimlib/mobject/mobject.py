@@ -1466,12 +1466,13 @@ class Mobject(object):
         return self
 
     # Getters
+
     @staticmethod
-    def get_z_index(m: Mobject):
+    def get_z_index(mob: Mobject):
         """
         Used by Scene.add, see scene.py for details.
         """
-        return m.z_index
+        return mob.z_index
 
     def get_bounding_box_point(self, direction: Vect3) -> Vect3:
         bb = self.get_bounding_box()
